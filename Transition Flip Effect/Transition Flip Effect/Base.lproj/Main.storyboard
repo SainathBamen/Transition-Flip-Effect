@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="21225" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina6_0" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21207"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="Transition_Flip_Effect" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="390" height="844"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="naruto4" translatesAutoresizingMaskIntoConstraints="NO" id="5h7-Wk-6kY">
+                                <rect key="frame" x="16" y="80" width="358" height="477"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="477" id="i9c-02-MHj"/>
+                                </constraints>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="o5b-TD-fal">
+                                <rect key="frame" x="69" y="648" width="252" height="50"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="Tap To Start">
+                                    <fontDescription key="titleFontDescription" type="boldSystem" pointSize="30"/>
+                                </buttonConfiguration>
+                                <connections>
+                                    <action selector="buttonAction:" destination="BYZ-38-t0r" eventType="touchUpInside" id="8Rq-ve-F8l"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <color key="backgroundColor" red="0.69803921568627447" green="0.39989288177305882" blue="0.30968585638086787" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="5h7-Wk-6kY" firstAttribute="centerX" secondItem="o5b-TD-fal" secondAttribute="centerX" id="FdF-nf-0Mw"/>
+                            <constraint firstItem="5h7-Wk-6kY" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="33" id="Hv3-J1-tBS"/>
+                            <constraint firstItem="o5b-TD-fal" firstAttribute="top" secondItem="5h7-Wk-6kY" secondAttribute="bottom" constant="91" id="Qop-kW-meN"/>
+                            <constraint firstItem="5h7-Wk-6kY" firstAttribute="trailing" secondItem="8bC-Xf-vdC" secondAttribute="trailingMargin" id="Wf1-j4-NZx"/>
+                            <constraint firstItem="5h7-Wk-6kY" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" id="wEY-zG-cxP"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="button" destination="o5b-TD-fal" id="NCa-Uu-5dN"/>
+                        <outlet property="imageView" destination="5h7-Wk-6kY" id="fGY-mv-oQE"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-12.307692307692307" y="3.5545023696682461"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="naruto4" width="299" height="168"/>
+    </resources>
+</document>

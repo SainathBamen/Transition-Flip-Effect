@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="21225" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina6_0" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21207"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="Project_3_Coffee_Shop" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="390" height="844"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" image="coffee" translatesAutoresizingMaskIntoConstraints="NO" id="Jri-La-fg6">
+                                <rect key="frame" x="0.0" y="47" width="390" height="88"/>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Enter Value in the box" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="i3f-B9-zLV">
+                                <rect key="frame" x="30" y="193" width="330" height="25.333333333333343"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="25.333333333333343" id="L7D-Cy-Mav"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="21"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Enter the number of cups of Coffee" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Jw5-8f-RVd">
+                                <rect key="frame" x="30" y="151" width="330" height="24"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="24" id="3vA-NU-5hU"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="20"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" misplaced="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="mLP-Fn-UMk">
+                                <rect key="frame" x="39" y="265.00000000000011" width="312" height="50.333333333333336"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="69.666666666666686" id="iI9-nf-0EL"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="34"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Final amount to pay" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="50q-mK-zwe">
+                                <rect key="frame" x="99.333333333333329" y="333.66666666666669" width="192.33333333333337" height="25.333333333333314"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="25.333333333333314" id="nP9-2O-FG9"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="21"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="0Pw-Gf-M1E">
+                                <rect key="frame" x="119" y="516" width="153" height="88"/>
+                                <color key="backgroundColor" systemColor="systemTealColor"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="88" id="Ma0-KI-Hxh"/>
+                                </constraints>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain">
+                                    <attributedString key="attributedTitle">
+                                        <fragment content="Calculate">
+                                            <attributes>
+                                                <font key="NSFont" size="16" name="Helvetica-Bold"/>
+                                            </attributes>
+                                        </fragment>
+                                    </attributedString>
+                                </buttonConfiguration>
+                                <connections>
+                                    <action selector="TotalButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="1XA-xS-fbP"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="0" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="EEK-BU-oxR">
+                                <rect key="frame" x="39" y="342" width="313" height="67"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="67" id="sdb-yr-Dk6"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="26"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <color key="backgroundColor" red="0.55967360141892297" green="0.80000000000000004" blue="0.59471108509932957" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="50q-mK-zwe" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="99.333333333333343" id="6Fg-dV-Xmq"/>
+                            <constraint firstItem="50q-mK-zwe" firstAttribute="top" secondItem="mLP-Fn-UMk" secondAttribute="bottom" constant="18.333333333333314" id="7ud-gJ-aqu"/>
+                            <constraint firstItem="mLP-Fn-UMk" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="39" id="83n-ay-a6p"/>
+                            <constraint firstItem="mLP-Fn-UMk" firstAttribute="centerX" secondItem="50q-mK-zwe" secondAttribute="centerX" id="8XX-rJ-TFN"/>
+                            <constraint firstItem="EEK-BU-oxR" firstAttribute="centerX" secondItem="mLP-Fn-UMk" secondAttribute="centerX" id="8ZK-ca-Vaa"/>
+                            <constraint firstItem="EEK-BU-oxR" firstAttribute="top" secondItem="mLP-Fn-UMk" secondAttribute="bottom" constant="26.666666666666572" id="CUZ-2L-Nui"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="0Pw-Gf-M1E" secondAttribute="bottom" constant="206" id="DAM-6C-TBZ"/>
+                            <constraint firstItem="Jw5-8f-RVd" firstAttribute="top" secondItem="Jri-La-fg6" secondAttribute="bottom" constant="16" id="IYu-r1-v34"/>
+                            <constraint firstItem="Jw5-8f-RVd" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="30" id="MMQ-vu-UwO"/>
+                            <constraint firstItem="EEK-BU-oxR" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" constant="342" id="RaT-6S-0kQ"/>
+                            <constraint firstItem="EEK-BU-oxR" firstAttribute="leading" secondItem="mLP-Fn-UMk" secondAttribute="leading" id="U6T-bq-18n"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="0Pw-Gf-M1E" secondAttribute="trailing" constant="118" id="UJj-1t-iIw"/>
+                            <constraint firstItem="i3f-B9-zLV" firstAttribute="top" secondItem="Jw5-8f-RVd" secondAttribute="bottom" constant="18" id="Ype-12-CMw"/>
+                            <constraint firstItem="Jri-La-fg6" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="byw-I0-fJA"/>
+                            <constraint firstItem="Jri-La-fg6" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="cgv-hY-kDO"/>
+                            <constraint firstItem="EEK-BU-oxR" firstAttribute="centerX" secondItem="0Pw-Gf-M1E" secondAttribute="centerX" id="gwg-hr-nCc"/>
+                            <constraint firstItem="Jw5-8f-RVd" firstAttribute="trailing" secondItem="i3f-B9-zLV" secondAttribute="trailing" id="hMw-2w-qn1"/>
+                            <constraint firstItem="mLP-Fn-UMk" firstAttribute="top" secondItem="i3f-B9-zLV" secondAttribute="bottom" constant="46.666666666666657" id="oZO-rV-ftG"/>
+                            <constraint firstItem="Jw5-8f-RVd" firstAttribute="leading" secondItem="i3f-B9-zLV" secondAttribute="leading" id="sQA-05-VHu"/>
+                            <constraint firstItem="i3f-B9-zLV" firstAttribute="centerX" secondItem="mLP-Fn-UMk" secondAttribute="centerX" id="tlV-da-IUp"/>
+                            <constraint firstItem="Jri-La-fg6" firstAttribute="centerX" secondItem="Jw5-8f-RVd" secondAttribute="centerX" id="uWd-v5-16H"/>
+                            <constraint firstItem="0Pw-Gf-M1E" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="119" id="zx7-4K-Z2q"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="coffeLable" destination="EEK-BU-oxR" id="cfa-El-2H2"/>
+                        <outlet property="coffeeTextField" destination="mLP-Fn-UMk" id="YVw-gK-kd6"/>
+                        <outlet property="totalButton" destination="0Pw-Gf-M1E" id="1ER-F6-eJu"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-26.153846153846153" y="3.5545023696682461"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="coffee" width="1090" height="306"/>
+        <systemColor name="systemTealColor">
+            <color red="0.18823529411764706" green="0.69019607843137254" blue="0.7803921568627451" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+    </resources>
+</document>
